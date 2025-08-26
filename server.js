@@ -275,7 +275,7 @@ app.post('/connect/submit', (req, res) => {
 
   // Validate required fields
   const requiredFields = [
-    'connectId', 'userId'
+    'connectId'
   ];
   const missingFields = requiredFields.filter(field => !data[field]);
   if (missingFields.length > 0) {
